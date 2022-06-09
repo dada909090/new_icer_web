@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
     -webkit-text-stroke: 2px white;
 }
 .logo-img{ /* 下了選單的logo*/
-    width: 200px; 
+    width: 300px; 
 }
 .icer-logo-bg{
 position:absolute;

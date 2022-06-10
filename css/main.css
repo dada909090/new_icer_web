@@ -53,7 +53,18 @@ hr{
     border-radius: 100px;
     color: rgb(255, 255, 255);
 }
-
+.commitlink{
+    font-size: 30px;
+}
+.fa-discord{
+    color:#6c00e7;
+}
+.fa-youtube{
+    color:#ff0000;
+}
+.self-introduction{
+    font-size: 20px;
+}
 /* 
 .bottom {
     position: absolute;

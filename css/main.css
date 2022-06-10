@@ -4,7 +4,6 @@ html{
 body::-webkit-scrollbar {
     display: none;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
@@ -30,6 +29,7 @@ width: 100%;
     top: 180px;
     left: 220px;
     z-index: 5;
+    transition: 0.5s;
     border-radius: 100%;
     box-shadow:#000 0px 0px 10px;
 }
@@ -38,6 +38,7 @@ width: 100%;
     top: 180px;
     left: 420px;
     z-index: 6;
+    transition: 0.5s;
     color: #fff;
 }
 .name{
@@ -70,3 +71,22 @@ hr{
     position: absolute;
     bottom: 20%;
 } */
+@media screen and (max-width:750px) { 
+    .icer_ico{
+        position: absolute;
+        top: 180px;
+        left: 25px;
+        z-index: 5;
+        border-radius: 100%;
+        transition: 0.5s;
+        box-shadow:#000 0px 0px 10px;
+    }
+    .me{
+        position: absolute;
+        top: 180px;
+        left: 225px;
+        z-index: 6;
+        transition: 0.5s;
+        color: #fff;
+    }
+  }

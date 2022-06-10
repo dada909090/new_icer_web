@@ -5,6 +5,8 @@
     left: 400px;
     border-radius: 10px;
     border:10px  #fff  solid;
+    transition: 0.5s;
+
 }
 .title{
     position: absolute;
@@ -13,3 +15,21 @@
     color: #fff;
     font-size: 30px;
     }
+    @media screen and (max-width:750px) { 
+        .show-img{
+            position: relative;
+            width: 380px;
+            top: 100px;
+            left: 117px;
+            transition: 0.5s;
+            border-radius: 10px;
+            border:10px  #fff  solid;
+        }   
+        .title{
+            position: absolute;
+            top: 444px;
+            left:214px;
+            color: #fff;
+            font-size: 30px;
+            }
+      }

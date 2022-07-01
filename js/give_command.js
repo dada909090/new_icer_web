@@ -58,8 +58,10 @@ function sele_change() {
 function click_make() {
     sele_change()
     let cmd_text = document.getElementById("cmd_text");
+    let stylei = document.querySelector("style");
     if (check_str()==true) {
-        cmd_text.innerHTML = '/give '+sele_mode+' '+item_id+' '+item_num+' '+item_data+' '+'{'+nbt_data_list.toString()+'}'
+        cmd_text.innerHTML = '<b>/give '+sele_mode+' '+item_id+' '+item_num+' '+item_data+' '+'{'+nbt_data_list.toString()+'}</b>'
+        stylei.innerHTML = '#cmd_text{background-color: white;border: 2px #000 solid;padding: 2px;font-size: 18px;border-radius: 5px;width: 1443px;}';
     }
     else if (check_str()=="error1") {
         alert("請填寫物品ID")

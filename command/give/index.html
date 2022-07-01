@@ -26,6 +26,7 @@
     <link rel="icon" href="../../favicon.png">
     <title>冰川麥塊站</title>
 </head>
+<style></style>
 <body>
  <div class="container-fluid p-0 pt-5">
             <nav class="anv navbar navbar-expand-sm bg-light shadow-sm top-0 navbar-light border-bottom position-fixed w-100" style="z-index: 10;position: fixed;">
@@ -66,28 +67,22 @@
                 </div>
                 </div>
             </nav>
-
-            <!-- 下拉選單end -->
-
-   
-        <div class="form">
-            <br>
-            <div class="command">
-              <p style="font-size: 20px; margin: 10px; font-weight: bold;">指令:</p>
-              <p class="cmd_text" id="cmd_text" >/give</p>
-            </div>
             <br>
             <form class="sign_up" method="get">
-                <div class="input_box" style="float: left;">
+            <div id="cmd_text"></div>
+
+                <div class="input_box basic" >
                     <h2 class="sign_text">基本設置: </h2>
-                    <h3 class="eletext">物品ID</h3>
-                    <input class="input" type="text" id="input_item_id"><br>
-                    <h3 class="eletext">物品數量(選填)</h3>
-                    <input class="input" type="text" id="input_item_num"><br>
-                    <h3 class="eletext">數據值(選填)</h3>
-                    <input class="input" type="text" id="input_item_data"><br>
+                    <h3 class="eletext">物品ID<input class="basicinput input" type="text" id="input_item_id"></h3>
+                    <br>
+                    <h3 class="eletext">物品數量<span class="selecttext">(選填)</span><input class="basicinput input" type="text" id="input_item_num"></h3>
+                    <br>
+                    <h3 class="eletext">數據值<span class="selecttext">(選填)</span><input class="basicinput input" type="text" id="input_item_data"></h3>
+                    <br>
                 </div>
-                <div class="input_box" style="float: left;">
+            <br>
+
+                <div class="input_box" >
                     <h2 class="sign_text">放置/破壞: </h2>             
                     <input type="checkbox" id="box1" value="qwc" onclick="cheak_box_plate()" class="check_box">
                     <h3 class="eletext">可冒險放置</h3>
@@ -96,8 +91,9 @@
                     <h3 class="eletext">可冒險破壞</h3>
                         <span id="destroy"></span><br>
                 </div>
+                <br>
 
-                <div class="input_box" style="float: left;">
+                <div class="input_box" >
                   <h2 class="sign_text">更多設定: </h2>          
                   <input type="checkbox" id="box3" value="qwc" onclick="cheak_box_deadkeep()" class="check_box">
                   <h3 class="eletext">死亡不掉落該物品</h3><br>
@@ -109,7 +105,7 @@
                   </div>
 
 
-                <div class="input_box" style="float:left;">
+                <div class="input_box">
                   <h2 class="sign_text">給予目標: </h2>
                   <select id="sele" onchange="sele_change()">
                     <option value="@s">@s 自己</option>
@@ -118,7 +114,7 @@
                     <option value="@r">@r 隨機玩家</option>
                 </select>
                 </div>
-                <div class="input_box" style="float:left;">
+                <div class="input_box">
                   <h2 class="sign_text">動作: </h2>
                   <strong><input type="button" value="生成指令" class="buttom" onclick="click_make()"></strong>
                   <strong><input type="button" value="一鍵複製" class="buttom" onclick="copyText('cmd_text')"></strong>
@@ -129,6 +125,7 @@
             </form>    
             <br>
             <br>
+            <div>給予指令生成器 由 冰川 製作</div>
         </div>
 
 </body>
